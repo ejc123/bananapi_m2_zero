@@ -1,4 +1,4 @@
-setenv bootargs console=ttyS0,115200 earlyprintk root=/dev/mmcblk0p2 rootwait
+setenv bootargs console=ttyS0,115200 earlyprintk root=/dev/mmcblk0p3 rootwait panic=10
 
 mmc dev 0
 fatload mmc 0 $kernel_addr_r zImage
