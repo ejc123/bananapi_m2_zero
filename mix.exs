@@ -64,8 +64,8 @@ defmodule NervesSystemBananaPiM2.MixProject do
 
   defp deps do
     [
-      {:nerves, "~> 1.6.0 or ~> 1.7.15 or ~> 1.8", runtime: false},
-      {:nerves_system_br, "~> 1.22", runtime: false},
+      {:nerves, "~> 1.8 or ~> 1.9 or ~> 1.10", runtime: false},
+      {:nerves_system_br, "~> 1.23", runtime: false},
       {:nerves_toolchain_armv7_nerves_linux_gnueabihf, "~> 1.8.0", runtime: false},
       {:nerves_system_linter, "~> 0.4", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.22", only: :docs, runtime: false}
