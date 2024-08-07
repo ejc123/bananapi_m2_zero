@@ -12,7 +12,7 @@ defmodule NervesSystemBananaPiM2.MixProject do
     [
       app: @app,
       version: @version,
-      elixir: "~> 1.11",
+      elixir: "~> 1.16",
       compilers: Mix.compilers() ++ [:nerves_package],
       nerves_package: nerves_package(),
       description: description(),
@@ -64,8 +64,8 @@ defmodule NervesSystemBananaPiM2.MixProject do
 
   defp deps do
     [
-      {:nerves, "~> 1.8 or ~> 1.9 or ~> 1.10", runtime: false},
-      {:nerves_system_br, "~> 1.25.1", runtime: false},
+      {:nerves, "~> 1.11", runtime: false},
+      {:nerves_system_br, "~> 1.28.2", runtime: false},
       {:nerves_toolchain_armv7_nerves_linux_gnueabihf, "~> 13.2.0", runtime: false},
       {:nerves_system_linter, "~> 0.4", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.22", only: :docs, runtime: false}
